@@ -7,24 +7,28 @@
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
     <title>Gallery</title>
 </head>
-<body id="body">
+<body>
+  <div id="body">
+  <header> 
     <nav>
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="about.html">About</a>
         <a href="#">Contact</a>
         <a href="#">Blog</a>
-        <div id="#indicato"></div>
+        <div id="line"></div>
       </nav>
-
-      <header> 
-      <h1>Here are some image galleries</h1>
+       <div id="logo"> 
+        <svg>
+          <polygon points="50,5 20,99 95,39 5,39 80,99"/>
+        </svg>
+        </div>
       </header>
-
+      <h1>Here are some image galleries</h1>
       <div id="container">
         <ul id="image-gallery">
           <li>
-            <img src="bilder/beach.jpeg" alt="A photo of a beach" />
-            <div class="overlay"><span>Beach</span></div>
+            <img src="bilder/house.jpeg" alt="A photo of a house" />
+            <div class="overlay"><span>House</span></div>
           </li>
           <li>
             <img src="bilder/girl.jpeg" alt="A photo of a girl" />
@@ -47,11 +51,14 @@
             <div class="overlay"><span>Sand</span></div>
           </li>
           <li>
-            <img src="bilder/house.jpeg" alt="A photo of a house" />
-            <div class="overlay"><span>House</span></div>
+            <img src="bilder/beach.jpeg" alt="A photo of a beach" />
+            <div class="overlay"><span>Beach</span></div>
           </li>
         </ul>
-      </div>     
+      </div> 
+  <footer>
+    <p>&copy;2022 Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </footer>
+ </div>        
 </body>
-<footer><p>&copy;2022 Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></footer>
 </html>
