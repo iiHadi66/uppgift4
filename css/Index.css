@@ -1,3 +1,120 @@
+.body{
+    height: 100vh;
+    background-color: lightcyan;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 *{
     margin: 0;
+    padding: 0;
+}
+header{
+    background-color: gray;
+    width: 100vw;
+    height: 12vh;
+}
+#cirkel{
+    float: right;
+}
+.navMenu {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 7rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .navMenu a:hover {
+    color: #fddb3a;
+  }
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #fddb3a;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(145px);
+    transform: translateX(145px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(275px);
+    transform: translateX(275px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(375px);
+    transform: translateX(375px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 90%;
+    margin-top: 2vh;
+    border-radius: 32px;
+  }
+  .bild{
+    background-color: rgb(70, 70, 70);
+    color: rgb(225, 217, 0);
+    width: 35vw;
+    height: 35vh;
+    margin-bottom: -10px;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+  }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    background-color: gray;
+}
+footer > p {
+    color: white;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}
+@media only screen  and (max-width: 768px){
+    .navMenu{
+        left: 35%;
+        top: 7%;
+    }
+ 
 }
